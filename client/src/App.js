@@ -5,21 +5,10 @@ import MovieList from "./Movies/MovieList";
 import Movie from "./Movies/Movie";
 import { Route } from "react-router-dom";
 import { BrowserRouter as Router } from "react-router-dom";
-// import axios from 'axios';
+import MovieCard from './Movies/MovieCard';
 
 const App = () => {
   const [savedList, setSavedList] = useState([]);
-  // const [moviesArray, setMoviesArray] = useState([]);
-  // const id = moviesArray.find(movie => movie.match.params.id === `${movie.id}`);
-
-  // axios
-  // .get('http://localhost:5000/api/movies')
-  // .then(response => {
-  //   setMoviesArray(response.data);
-  // })
-  // .catch(error => {
-  //   console.error('Server Error', error);
-  // });
 
   const addToSavedList = movie => {
     setSavedList([...savedList, movie]);
